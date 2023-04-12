@@ -1,0 +1,21 @@
+{
+  // 编译设置
+  "compilerOptions": {
+    // 编译代码的目标
+    "target": "ESNext",
+    // 设置代码的模块系统
+    "module": "ESNext",
+    // 模块解析策略
+    "moduleResolution": "Node",
+    // ES 模块的互操作性
+    "esModuleInterop": true,
+    // 严格模式
+    "strict": true,
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  }
+}
