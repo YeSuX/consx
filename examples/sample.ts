@@ -1,17 +1,10 @@
 import consola from 'consola'
-import consx from '../src/index'
+import consx from '../src'
 
-async function main() {
-  consola.log('This a consola log.')
-  consx.log('This a consola log.')
+const obj = { name: 'suxiong', age: 24 }
 
-  // consola.error(new Error('This is an example error. Everything is fine!'))
-  // consola.info('Using consola 3.0.0')
-  // consola.start('Building project...')
-  // consola.success('Project built!')
-  // await consola.prompt('Deploy to the production?', {
-  //   type: 'confirm',
-  // })
-}
+consola.log('this is a log')
+consola.start('this is a start.')
 
-main()
+// consx.log('this is a log')
+consx.start('this is a start.')

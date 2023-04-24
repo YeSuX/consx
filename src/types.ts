@@ -1,7 +1,12 @@
-import type { Consx } from './consx'
+import type { LogLevel } from 'consola'
+import type { LogType } from './constants'
 
-export interface ConsxOptions {
-
+export interface LogObject {
+  level: LogLevel
 }
 
-export type ConsxInstance = Consx
+export interface LogFn {
+  (message: any, ...args: any[]): void
+}
+
+export type ConsxInstance = Record<LogType, LogFn>
