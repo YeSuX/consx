@@ -29,7 +29,7 @@
     "consola": "^3.0.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.4",
+    "@suxiong/eslint-config": "^1.0.0",
     "defu": "^6.1.2",
     "eslint": "^8.38.0",
     "typescript": "^5.0.4"
